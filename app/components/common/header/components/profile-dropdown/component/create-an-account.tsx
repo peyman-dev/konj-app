@@ -7,20 +7,19 @@ import { User2 } from "lucide-react";
 import React from "react";
 
 const CreateAnAccount = () => {
+  const Trigger = (
+    <Button
+      startDecorator={<User2 className="size-4" />}
+      size="sm"
+      interfaceColor="primary"
+    >
+      ورود/ثبت نام
+    </Button>
+  );
+
   return (
     <WithParentComponent>
-      <Button
-        startDecorator={<User2 className="size-4" />}
-        size="sm"
-        interfaceColor="primary"
-      >
-        ورود/ثبت نام
-      </Button>
-
-      <Dialog>
-        <DialogTrigger>
-          <button>Toggle Modal ! :)</button>
-        </DialogTrigger>
+      <Dialog Trigger={Trigger}>
         <div>content</div>
       </Dialog>
     </WithParentComponent>
