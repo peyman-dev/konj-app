@@ -1,8 +1,67 @@
 @import "tailwindcss";
+@import "./../public/fonts/index.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-YekanBakh-Thin: YekanBakh-Thin;
+  --font-YekanBakh-Light: YekanBakh-Light;
+  --font-YekanBakh-Regular: YekanBakh-Regular;
+  --font-YekanBakh-SemiBold: YekanBakh-SemiBold;
+  --font-YekanBakh-Bold: YekanBakh-Bold;
+  --font-YekanBakh-ExtraBold: YekanBakh-ExtraBold;
+  --font-YekanBakh-Black: YekanBakh-Black;
+  --font-YekanBakh-ExtraBlack: YekanBakh-ExtraBlack;
+
+  --color-primary-50: #fbf8fb;
+  --color-primary-100: #f50f7f;
+  --color-primary-200: #eadfef;
+  --color-primary-300: #d9c6e1;
+  --color-primary-400: #c3a4ce;
+  --color-primary-500: #a87fb6;
+  --color-primary-600: #8b6099;
+  --color-primary-700+: #744d7e;
+  --color-primary-800: #604068;
+  --color-primary-900: #563c5c;
+  --color-primary-950: #311d35;
+
+  --color-error-100: #fddee0;
+  --color-error-300: #f9aaa1;
+  --color-error-500: #f72e3c;
+  --color-error-600: #ec0b1a;
+  --color-error-900: #8c1018;
+
+  --color-info-100: #d8f2ff;
+  --color-info-600: #1891fc;
+  --color-info-700: #0d76e8;
+  --color-info-900: #155193;
+
+  --color-success-200: #c0f2ce;
+  --color-success-400: #57d179;
+  --color-success-500: #30b757;
+  --color-success-700: #1e7738;
+
+  --color-warning-100: #fedfc3;
+  --color-warning-300: #fced48;
+  --color-warning-500: #e9c309;
+  --color-warning-700: #a06e08;
+
+  --color-gray-20: #ebebeb;
+  --color-gray-30: #d7d7d7;
+  --color-gray-40: #c3c3c3;
+  --color-gray-50: #b0b0b0;
+  --color-gray-100: #969696;
+  --color-gray-200: #8a8a8a;
+  --color-gray-300: #787878;
+  --color-gray-400: #666666;
+  --color-gray-500: #555555;
+  --color-gray-600: #444444;
+  --color-gray-700: #343434;
+  --color-gray-800: #242424;
+  --color-gray-900: #161616;
+  --color-gray-950: #000000;
+}
+
+body {
+  @apply font-YekanBakh-Regular;
 }
 
 @theme inline {
@@ -10,17 +69,4 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
