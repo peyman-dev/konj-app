@@ -1,7 +1,8 @@
 import React, { ReactNode } from "react";
-import { ButtonProps, Button as UIButton } from "@heroui/button";
 import clsx from "clsx";
 import settings from "./settings";
+import { ButtonProps } from "@mui/joy";
+import { Button as UIButton } from "@mui/joy";
 
 interface IProps extends ButtonProps {
   children: ReactNode;
@@ -9,8 +10,6 @@ interface IProps extends ButtonProps {
 }
 
 const Button = ({ children, interfaceColor, ...rest }: IProps) => {
-
-
   return (
     <UIButton {...rest} className={clsx(settings.applyTheme(interfaceColor))}>
       {children}
