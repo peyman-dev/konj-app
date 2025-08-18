@@ -88,3 +88,8 @@ body {
 @utility flex-col-center {
   @apply flex items-center justify-center flex-col;
 }
+
+
+@utility container {
+  @apply mx-auto
+}
