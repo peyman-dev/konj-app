@@ -2,7 +2,7 @@ import React from "react";
 import ShoppingCart from "@/svg/shopping-cart.svg";
 import Image from "next/image";
 import { Button } from "@mui/joy";
-import WithParentComponent from "@/app/components/ui/with-parent-component";
+import WithParentComponent from "@/app/components/ui/hoc/with-parent-component";
 
 const BasketDropdown = () => {
   return (
