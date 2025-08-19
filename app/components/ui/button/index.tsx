@@ -11,7 +11,7 @@ interface IProps extends ButtonProps {
 
 const Button = ({ children, interfaceColor, ...rest }: IProps) => {
   return (
-    <UIButton {...rest} className={clsx(settings.applyTheme(interfaceColor))}>
+    <UIButton {...rest} className={clsx(settings.applyTheme(interfaceColor), rest?.className)}>
       {children}
     </UIButton>
   );

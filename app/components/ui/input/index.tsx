@@ -9,7 +9,7 @@ const Input = ({ ...rest }: InputProps) => {
         classNames={{
           input:
             "h-10! px-3! font-YekanBakh-Regular! mt-1! focus-within:ring-0! !rounded-none focus-within:outline-gray-100/30",
-          label: "text-xs! mb-5! font-YekanBakh-Regular!",
+          label: "text-xs! mb-5! font-YekanBakh-Regular! select-none!",
         }}
         variant="flat"
         color="danger"
