@@ -8,10 +8,10 @@ import ProfileDropdown from "../profile-dropdown";
 const Desktop = () => {
   return (
     <nav className="py-[18px]">  
-      <div className="w-full container flex-between">
+      <div className="w-full space-x-4 container flex-between">
         <Logo />
         <Search />
-        <div className="**:h-12! flex items-center gap-4 rounded-lg!">
+        <div className="**:h-12! *:min-w-max! flex items-center gap-4 rounded-lg!">
           <MyLibrary />
           <BasketDropdown />
           <ProfileDropdown />
