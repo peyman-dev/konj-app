@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 const applyTheme = (interfaceColor: string) => {
   const baseTheme = clsx(
-    "flex items-center justify-center font-YekanBakh-Light! gap-2.5 px-4 h-[44px] !rounded-[8px]"
+    "flex items-center justify-center font-YekanBakh-Light! cursor-pointer! duration-150! hover:bg-opacity-90! gap-2.5 px-4 h-[44px] !rounded-[8px]"
   );
 
   switch (interfaceColor) {
