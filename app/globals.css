@@ -93,3 +93,7 @@ body {
 @utility container {
   @apply mx-auto
 }
+
+#dialog-close-holder {
+  @apply *:right-[88%]! mb-14!
+}
