@@ -1,4 +1,4 @@
-import WithParentComponent from "@/app/components/ui/with-parent-component";
+import WithParentComponent from "@/app/components/ui/hoc/with-parent-component";
 import React from "react";
 import CreateAnAccount from "./component/create-an-account";
 
