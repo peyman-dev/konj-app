@@ -2,7 +2,14 @@
 import useToggle from "@/app/core/hooks/use-toggle";
 import React, { JSX, ReactNode } from "react";
 import { isDialogTrigger } from "./settings";
-import { DialogContent, Modal, ModalDialog, Sheet, Typography } from "@mui/joy";
+import {
+  DialogContent,
+  Modal,
+  ModalClose,
+  ModalDialog,
+  Sheet,
+  Typography,
+} from "@mui/joy";
 import DialogTrigger from "./trigger";
 
 interface IProps {
@@ -17,25 +24,24 @@ const Dialog = ({ Trigger, title, children }: IProps) => {
   return (
     <React.Fragment>
       <DialogTrigger onToggle={toggle}>{Trigger}</DialogTrigger>
-      <Modal open={isOpen} onClose={() => toggle()}>
+      <Modal
+        dir="rtl"
+        aria-labelledby={title || "dialog"}
+        aria-describedby="a dialog "
+        open={isOpen}
+        onClose={() => toggle()}
+        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+      >
         <Sheet
+          dir="rtl"
           variant="outlined"
           sx={{ maxWidth: 500, borderRadius: "md", p: 3, boxShadow: "lg" }}
         >
-          <header>
-            {String(title) && (
-              <Typography
-                component="h2"
-                id="modal-title"
-                level="h4"
-                textColor="inherit"
-                sx={{ fontWeight: "lg", mb: 1 }}
-                className="font-YekanBakh-SemiBold!"
-              >
-                {title}
-              </Typography>
-            )}
-          </header>
+          <div id="dialog-close-holder" className="mb-10">
+            <ModalClose variant="plain" sx={{ m: 1 }} />
+          </div>
+
+          <main className="min-w-[424px]">{children}</main>
         </Sheet>
       </Modal>
     </React.Fragment>
