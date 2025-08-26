@@ -1,6 +1,6 @@
-import Rating from "@/app/components/templates/book/primary-content/components/rating";
 import Link from "next/link";
 import React from "react";
+import UserRatingStar from "../../product-reviews/rating-star";
 
 const Details = () => {
   return (
@@ -16,7 +16,7 @@ const Details = () => {
       </div>
       {/* Rating */}
       <div>
-        <Rating />
+        <UserRatingStar />
       </div>
     </main>
   );
