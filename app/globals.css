@@ -76,7 +76,7 @@
 }
 
 body {
-  @apply font-YekanBakh-Regular;
+  @apply font-YekanBakh-Regular bg-[#F5F6F8];
 }
 
 @theme inline {
