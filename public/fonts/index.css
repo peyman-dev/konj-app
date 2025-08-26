@@ -37,3 +37,43 @@
   font-family: YekanBakh-ExtraBlack;
   src: url("./YekanBakhFaNum-ExtraBlack.woff");
 }
+
+@font-face {
+  font-family: "Farhang-Thin";
+  src: url("./farhang/Farhang2FaNum-Thin.woff");
+}
+
+@font-face {
+  font-family: "Farhang-Light";
+  src: url("./farhang/Farhang2FaNum-Light.woff");
+}
+
+@font-face {
+  font-family: "Farhang-Regular";
+  src: url("./farhang/Farhang2FaNum-Thin.woff");
+}
+
+@font-face {
+  font-family: "Farhang-Medium";
+  src: url("./farhang/Farhang2FaNum-Medium.woff");
+}
+
+@font-face {
+  font-family: "Farhang-Bold";
+  src: url("./farhang/Farhang2FaNum-Bold.woff");
+}
+
+@font-face {
+  font-family: "Farhang-DemiBold";
+  src: url("./farhang/Farhang2FaNum-DemiBold.woff");
+}
+
+@font-face {
+  font-family: "Farhang-ExtraBold";
+  src: url("./farhang/Farhang2FaNum-ExtraBold.woff");
+}
+
+@font-face {
+  font-family: "Farhang-Black";
+  src: url("./farhang/Farhang2FaNum-Black.woff");
+}

@@ -5,7 +5,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main>
+    <main className='mb-20'>
       <HeroSection />
       <UnderHero />
       <Collection 

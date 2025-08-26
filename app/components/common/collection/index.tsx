@@ -10,7 +10,7 @@ const Collection = ({ title, products }: { title?: string, products?: any[] }) =
           {title}
         </h3>
       </div>
-      <section data-type="Products container">
+      <section className="flex items-center gap-4" data-type="Products container">
         <ProductCard />
         <ProductCard />
         <ProductCard />

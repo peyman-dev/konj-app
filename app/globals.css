@@ -11,6 +11,15 @@
   --font-YekanBakh-Black: YekanBakh-Black;
   --font-YekanBakh-ExtraBlack: YekanBakh-ExtraBlack;
 
+  --font-Farhang-Thin: Farhang-Thin;
+  --font-Farhang-Light: Farhang-Light;
+  --font-Farhang-Regular: Farhang-Regular;
+  --font-Farhang-Medium: Farhang-Medium;
+  --font-Farhang-Bold: Farhang-Bold;
+  --font-Farhang-DemiBold: Farhang-DemiBold;
+  --font-Farhang-ExtraBold: Farhang-ExtraBold;
+  --font-Farhang-Black: Farhang-Black;
+
   --color-primary-50: #fbf8fb;
   --color-primary-100: #f50f7f;
   --color-primary-200: #eadfef;
@@ -89,11 +98,10 @@ body {
   @apply flex items-center justify-center flex-col;
 }
 
-
 @utility container {
-  @apply mx-auto
+  @apply mx-auto;
 }
 
 #dialog-close-holder {
-  @apply *:right-[88%]! mb-14!
+  @apply *:right-[88%]! mb-14!;
 }
