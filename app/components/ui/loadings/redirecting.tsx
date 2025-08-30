@@ -1,14 +1,18 @@
+
 import { Loader2 } from "lucide-react";
 import React from "react";
+import { createPortal } from "react-dom";
 
 const Redirecting = () => {
   return (
-    <div className="fixed flex-center  z-1000 h-dvh w-dvw top-0 right-0 bg-black/50">
-      <div className="w-[386px] p-5 bg-white rounded-lg flex-col-center gap-4">
-        <Loader2 className="size-10 duration-150 animate-spin transition-all" />
-        <span>درحال انتقال</span>
-      </div>
-    </div>
+    <>
+      {createPortal(<div className="fixed flex-center  z-1000! h-dvh w-dvw top-0 right-0 bg-black/15">
+        <div className="p-5 text-primary-700 bg-white rounded-lg flex-col-center gap-4">
+          <Loader2 className="size-10 duration-150 animate-spin transition-all" />
+          <span>درحال انتقال</span>
+        </div>
+      </div>, document.body)}
+    </>
   );
 };
 
