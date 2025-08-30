@@ -12,7 +12,7 @@ const Collection = ({
   products?: any[];
 }) => {
   return (
-    <Container data-description="Products Collection">
+    <Container data-description="Products Collection" className="space-y-[26px]"> 
       <div>
         <h3
           className="text-2xl font-YekanBakh-Bold"

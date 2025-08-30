@@ -1,19 +1,20 @@
-"use client"
-import Collection from '@/app/components/common/collection'
-import HeroSection from '@/app/components/templates/home/hero-section'
-import UnderHero from '@/app/components/templates/home/under-hero'
-import React from 'react'
+"use client";
+import Collection from "@/app/components/common/collection";
+import HeroSection from "@/app/components/templates/home/hero-section";
+import UnderHero from "@/app/components/templates/home/under-hero";
+import React from "react";
 
 const page = () => {
   return (
-    <main className='mb-20 relative'>
+    <main className="mb-20 relative">
       <HeroSection />
       <UnderHero />
-      <Collection 
-        title='جدیدترین کتاب ها'
-      />
+      <section className="space-y-[55px]">
+        <Collection title="جدیدترین کتاب ها" />
+        <Collection title="تا 30 درصد تخفیف" />
+      </section>
     </main>
-  )
-}
+  );
+};
 
-export default page
+export default page;
