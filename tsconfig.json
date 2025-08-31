@@ -24,6 +24,6 @@
       "@/images/*": ["./public/images/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/templates/explore/content/modules/section"],
   "exclude": ["node_modules"]
 }
