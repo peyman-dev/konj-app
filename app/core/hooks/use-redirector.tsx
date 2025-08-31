@@ -1,18 +1,37 @@
 "use client";
+import Redirecting from "@/app/components/ui/loadings/redirecting";
 import { useRouter } from "next/navigation";
-import React, { useTransition } from "react";
+import { useTransition, ReactNode } from "react";
 
-const useRedirector = (): [isLoading: boolean, redirectToUrl: (url: string) => void] => {
+const useRedirector = () => {
   const [isPending, startTransition] = useTransition();
-  const router = useRouter()
+  const router = useRouter();
 
-  const handleRedirect = (url: string) => {
-    startTransition(async () => {
-        await router.push(url) 
-    })
-  }
+  const redirectToUrl = (url: string) => {
+    try {
+      startTransition(() => {
+        router.push(url);
+      });
+    } catch (error) {
+      console.error("Error during redirect:", error);
+      // می‌توانید منطق مدیریت خطا را اینجا اضافه کنید، مثلاً نمایش یک پیام خطا
+    }
+  };
 
-  return [isPending, handleRedirect]
+  const RedirectorContainer: React.FC<{ children: ReactNode }> = ({ children }) => {
+    return (
+      <>
+        {isPending && <Redirecting />}
+        {children}
+      </>
+    );
+  };
+
+  return {
+    isLoading: isPending,
+    redirectToUrl,
+    RedirectorContainer,
+  };
 };
 
 export default useRedirector;

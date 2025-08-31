@@ -9,12 +9,12 @@ import Redirector from "./components/redirector";
 import Redirecting from "../../ui/loadings/redirecting";
 
 const ProductCard = () => {
-  const [isLoading, redirect] = useRedirector();
+  const { isLoading, redirectToUrl, RedirectorContainer } = useRedirector();
 
   return (
-    <>
+    <RedirectorContainer>
       <article
-        onClick={() => redirect("/explore/book/example-book")}
+        onClick={() => redirectToUrl("/explore/book/example-book")}
         className="min-w-[197px]! relative cursor-pointer rounded-sm overflow-hidden bg-white"
       >
         {/* <Redirector isLoading={isLoading}/> */}
@@ -22,8 +22,7 @@ const ProductCard = () => {
         <Details />
         <Footer />
       </article>
-      {isLoading && <Redirecting />}
-    </>
+    </RedirectorContainer>
   );
 };
 

@@ -7,12 +7,12 @@ import Link from "next/link";
 import React, { useId } from "react";
 
 const UnderHeroItem = ({ title, href, src }: UnderHeroItemType) => {
-  const [isLoading, redirect] = useRedirector();
+  const {RedirectorContainer,isLoading,redirectToUrl} = useRedirector();
   const id = useId();
 
   return (
     <article
-      onClick={() => redirect(href)}
+      onClick={() => redirectToUrl(href)}
       className="h-[60px] cursor-pointer rounded-lg border border-dashed flex-center gap-2"
     >
       {isLoading ? (

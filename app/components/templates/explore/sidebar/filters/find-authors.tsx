@@ -1,8 +1,13 @@
 import React from 'react'
+import FilterLabel from '../common/filter-label'
 
 const FindAuthors = () => {
   return (
-    <div>FindAuthors</div>
+    <div>
+      <FilterLabel 
+        title='نویسنده، مترجم یا راوی'
+      />
+    </div>
   )
 }
 
