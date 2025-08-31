@@ -3,7 +3,7 @@ import React from "react";
 
 const CTAButton = () => {
   return (
-    <div>
+    <div className="my-4">
       <Button interfaceColor="primary" fullWidth>
         افزودن به سبد خرید
       </Button>

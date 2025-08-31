@@ -11,7 +11,7 @@ const AddToCart = () => {
   return (
     <div className="p-6 gap-8 flex rounded-lg bg-white">
         <BookImage />
-      <div className="grow">
+      <div className="grow py-10">
         <div className="flex-between">
             <BookTitle />
             <BookRates />

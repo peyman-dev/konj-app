@@ -2,7 +2,11 @@ import React from 'react'
 
 const BookTitle = () => {
   return (
-    <div>BookTitle</div>
+    <div className='py-4'>
+      <h1 className="font-YekanBakh-SemiBold text-xl">
+      وقتی نیچه گریست
+      </h1>
+    </div>
   )
 }
 
