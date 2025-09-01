@@ -4,7 +4,7 @@ import Description from './description'
 
 const MainContent = () => {
   return (
-    <main className='grow'>
+    <main className='grow space-y-5'>
         <AddToCart />
         <Description />
     </main>
