@@ -19,6 +19,7 @@
     "@mui/joy": "^5.0.0-beta.52",
     "@mui/material": "^7.3.1",
     "bcryptjs": "^3.0.2",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.12",
     "josh": "^0.2.2",
@@ -30,6 +31,8 @@
     "react-dom": "19.1.0",
     "react-hook-form": "^7.62.0",
     "swiper": "^11.2.10",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7",
     "zustand": "^5.0.8"
   },
   "devDependencies": {
