@@ -1,8 +1,8 @@
 import React from "react";
 
-const page = async ({ params }: { params: { category: string } }) => {
-  const category = await params.category
-  console.log(category)
+const page = ({ params }: { params: { category: string } }) => {
+  const { category } = params; // Directly destructure params
+  console.log(category);
   return <div>page</div>;
 };
 
