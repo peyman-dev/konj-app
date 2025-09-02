@@ -18,13 +18,19 @@ interface Item {
 interface ProductsSliderProps {
   items: Item[];
   RenderComponent?: React.FC<Item>;
+  slidesPerView?: number
 }
 
-const ProductsSlider = ({ items, RenderComponent }: ProductsSliderProps) => {
+const ProductsSlider = ({ items, RenderComponent,slidesPerView }: ProductsSliderProps) => {
   return (
     <div className="relative select-none">
       <PreviousButton />
-      <Swiper {...swiperCfg}>
+      <Swiper {...swiperCfg} breakpoints={{
+        ...swiperCfg.breakpoints,
+        1200: {
+          slidesPerView
+        }
+      }}>
         {items?.map((item) => (
           <SwiperSlide key={item.id}>
             {RenderComponent ? <RenderComponent {...item} /> : <ProductCard />}

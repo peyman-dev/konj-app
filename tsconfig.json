@@ -21,7 +21,8 @@
     "paths": {
       "@/*": ["./*"],
       "@/svg/*": ["./public/images/svg/*"],
-      "@/images/*": ["./public/images/*"]
+      "@/images/*": ["./public/images/*"],
+      "@/core/*": ["./app/core/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/templates/explore/content/modules/section"],
