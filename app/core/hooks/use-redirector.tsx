@@ -14,7 +14,6 @@ const useRedirector = () => {
       });
     } catch (error) {
       console.error("Error during redirect:", error);
-      // می‌توانید منطق مدیریت خطا را اینجا اضافه کنید، مثلاً نمایش یک پیام خطا
     }
   };
 
