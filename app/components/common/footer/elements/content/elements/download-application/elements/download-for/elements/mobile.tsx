@@ -1,6 +1,7 @@
 import React from "react";
 import DownloadTitle from "../../../../common/download-title";
 import Image from "next/image";
+import GooglePlay from "@/svg/Google Play.svg"
 
 const DownloadForMobile = () => {
   return (
@@ -10,7 +11,7 @@ const DownloadForMobile = () => {
         <div>
           <p className="text-xs">دریافت از:</p>
           <button>
-            <Image src={""} alt="Google Play" width={108} height={24} />
+            <Image src={GooglePlay.src} alt="Google Play" width={108} height={24} />
           </button>
         </div>
         <div></div>
