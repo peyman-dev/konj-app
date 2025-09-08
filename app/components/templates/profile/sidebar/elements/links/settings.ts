@@ -10,29 +10,29 @@ export const navigation = [
     id: crypto.randomUUID(),
     title: "اطلاعات کاربری",
     icon: UserIcon.src,
-    href: "/"
+    href: "/profile"
   },
   {
     id: crypto.randomUUID(),
     title: "کتابخانه من",
     icon: Library.src,
-    href: "/"
+    href: "/profile/my-library"
   },
   {
     id: crypto.randomUUID(),
     title: "تاریخچه تراکنش ها",
     icon: Calendar.src,
-    href: "/"
+    href: "/profile/transactions"
   },
   {
     id: crypto.randomUUID(),
     title: "نشان شده ها",
     icon: BookMark.src,
-    href: "/"
+    href: "/profile/bookmarks"
   },
   {
     id: crypto.randomUUID(),
-    title: "تاریخچه تراکنش ها",
+    title: "خروج از حساب کاربری",
     icon: LogOut.src,
     href: "#",
     action: () => {

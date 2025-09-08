@@ -3,8 +3,7 @@ import { navigation } from "./settings";
 import Item from "./item";
 
 const Links = () => {
-  console.log("items");
-  console.log(navigation);
+
   return (
     <div className="mb-[30px] mt-4">
       {navigation.map((item) => (
