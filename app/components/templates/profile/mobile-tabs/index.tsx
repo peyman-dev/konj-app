@@ -20,7 +20,7 @@ const MobileTabs = () => {
             console.log(e)
         }}>
           {navigation.map((item) => (
-            <Tab children={item.title} className="font-Farhang-Medium! md:text-base min-w-max! px-2! text-sm!" />
+            <Tab key={item.id} children={item.title} className="font-Farhang-Medium! md:text-base min-w-max! px-2! text-sm!" />
           ))}
         </TabList>
         <TabPanel value={0}> 

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Filter from "./elements/filter";
+import Table from "./elements/table";
 
 const MyLibrary = () => {
   return (
-    <div>MyLibrary</div>
-  )
-}
+    <section className="grow">
+      <Filter />
+      <Table />
+    </section>
+  );
+};
 
-export default MyLibrary
+export default MyLibrary;
